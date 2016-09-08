@@ -1,0 +1,369 @@
+<html>
+<head>
+<style>
+form{padding-left:20%;}
+h1.deepshadow {
+  color: #e0dfdc;
+height:100px;
+width:100%;
+font-size:80px;
+  background-color: brown;
+  letter-spacing: .1em;
+  text-shadow: 0 -1px 0 #ffffff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+}
+</style>
+		<script>
+window.addEventListener("load", function(){
+	var load_screen = document.getElementById("load_screen");
+	document.body.removeChild(load_screen);
+});
+</script>
+</head>
+<body onload="alert(Data may be lost);">
+
+
+<script src="javascript/addtable.js"> </script>
+<script src="javascript/addtable1.js"> </script>
+<div style="text-align:center;">
+<h1 style="text-align:center;"class="deepshadow">Resume Maker</h1></div>
+<div id="centr">
+<form action="./formProcessor.php" method="POST">
+<table border="2" colspan="5" width="754px">
+<tr> <th colspan="3">College Detail and Area of Interest </th></tr>
+<tr>
+<td>Name</td> 
+<td><input type="text" name="Name"  /> </td></tr>
+<tr><td>Class </td>
+<td><select name="Class">
+
+<option value="B.tech">B.tech </option>
+<option value="M.tech">M.tech </option>
+<option value="B.sc"> B.sc</option>
+<option value="M.sc"> M.sc</option>
+<option value="MCA">MCA </option>
+<option value="BCA"> BCA</option>
+
+
+</select></td></tr>
+<tr><td>Course</td>
+<td>  <input  type="text" name="Course" /></td></tr>
+<tr><td> College</td><td> <input  type="text" name="College" /></td></tr>
+<tr><td> Year</td><td><input  type="text" name="saal" /></td></tr>
+<tr><td> Semester</td><td><input  type="text" name="Semester" /></td></tr>
+<tr><td> E-mail</td><td><input  type="text" name="Email" /></td></tr>
+<tr><td> Area(s) of Interest: </td> 
+ <td> <input  type="text" name="Area(s) of Interest" /></td></tr>
+ <tr>
+ </table>
+<!--<p><input type="button" value="Add" onClick="addRow('dataTable')" /> 
+					<input type="button" value="Remove" onClick="deleteRow('dataTable')"  /></p>
+ <table border="2" colspan="5" id="dataTable" >
+<tr>  <th colspan="5" >Education Information</th>
+
+
+</tr>
+<tr>
+<td>Check box</td>
+ <td> Educational Qualification</td>
+ <td>Year </td>
+  <td>Board/University </td>
+   <td>CGPA/%</td>
+   
+</tr>
+
+<tr> 
+<td><input type="checkbox" required="required" name="chk[]" checked="checked" /></td>
+<td> <input type="text" id="aim0" required="required"  name="Qualification[]" /> </td>
+ <td><input type="text" required="required"  name="year[]"/> </td>
+  <td><input type="text" required="required"  name="Board[]"/> </td>
+   <td><input type="text" required="required"   name="CGPA[]"/>  </td>
+
+</tr>
+
+</table>-->
+
+			
+			<!-- Educational Qualification ------------ -->
+<fieldset class="row2" style="width:730px;" >
+				<legend width="50px">Educational Qualification</legend>
+				<p> 
+					<input type="button" value="Add" onClick="addRow('dataTable')" /> 
+					<input type="button" value="Remove" onClick="deleteRow('dataTable')"  /> 
+					
+				</p>
+               <table id="dataTable" class="form" border="1">
+                  <tbody>
+                    <tr>
+                      <p>
+						<td><input type="checkbox" required="required" name="chk[]" checked="checked" /></td>
+						<td>
+							<label>Qualification</label>
+							<input type="text" required="required" name="Qualification[]">
+						 </td>
+						 <td>
+							<label >Year</label>
+							<input type="text" required="required" class="small"  name="year[]">
+					     </td>
+						 <td>
+							<label >Board</label>
+							<input type="text" id="BX_gender" name="Board[]" required="required">
+								
+						 </td>
+						 <td>
+							<label >CGPA / % /Marks</label>
+							<input type="text" id="CGPA" name="CGPA[]" required="required">
+								
+						 </td>
+							</p>
+                    </tr>
+                    </tbody>
+                </table>
+				<div class="clear"></div>
+            </fieldset>
+		                       	<!-- project or intenships    -->
+				<fieldset class="row4"  style="width:730px;" >
+				<legend width="50px">Project or Internship</legend>
+				<p> 
+					<input type="button" value="Add" onClick="addRow('dataTable3')" /> 
+					<input type="button" value="Remove" onClick="deleteRow('dataTable3')"  /> 
+					
+				</p>
+               <table id="dataTable3" class="form1" border="1">
+                  <tbody>
+                    <tr>
+                      <p>
+						<td><input type="checkbox" required="required" name="chk2[]" checked="checked" /></td>
+						<td>
+							<label>Project/internship</label>
+							<input type="text" required="required" name="Project[]">
+						 </td>
+						 <td>
+							<label>Description</label>
+							<input type="text" required="required" name="Details[]">
+						 </td>
+						 
+							</p>
+                    </tr>
+                    </tbody>
+                </table>
+			
+</fieldset>
+			<!-- Technical Exploser------------ -->
+<fieldset class="row4"  style="width:730px;" >
+				<legend width="50px">Technical Exploser</legend>
+				<p> 
+					<input type="button" value="Add" onClick="addRow('dataTable2')" /> 
+					<input type="button" value="Remove" onClick="deleteRow('dataTable2')"  /> 
+					
+				</p>
+               <table id="dataTable2" class="form1" border="1">
+                  <tbody>
+                    <tr>
+                      <p>
+						<td><input type="checkbox" required="required" name="chk1[]" checked="checked" /></td>
+						<td>
+							<label>Skills_Name</label>
+							<input type="text" required="required" name="Skills_Name[]">
+						 </td>
+						 <td>
+							<label>Skill</label>
+							<input type="text" required="required" name="Skills[]">
+						 </td>
+						 
+							</p>
+                    </tr>
+                    </tbody>
+                </table>
+			
+</fieldset>
+			
+		<!-- Hobby------------ -->
+		
+				<fieldset class="row3" style="width:730px;">
+				<legend width="50px">Hobbies</legend>
+				<p> 
+					<input type="button" value="Add" onClick="addRow1('dataTable1')" /> 
+					<input type="button" value="Remove" onClick="deleteRow1('dataTable1')"  /> 
+					
+				</p>
+               <table id="dataTable1" class="form1" border="1">
+                  <tbody>
+                    <tr>
+                      <p>
+						<td><input type="checkbox" required="required" name="chk1[]" checked="checked" /></td>
+						<td>
+							<label>Hobby</label>
+							<input type="text" required="required" name="Hobby[]">
+						 </td>
+						 
+							</p>
+                    </tr>
+                    </tbody>
+                </table>
+			
+            </fieldset>
+			
+			
+			
+			
+			<!-- Personal Details------------ -->
+		
+				<table border="2"  width="754px"   style="border-collapse: collapse; border:2px black solid;">
+<tr style="border:2px black solid;" > <th colspan="2">Personal_details </th>
+<th  colspan="2" >Permanent_Address </th>
+</tr>
+<tr>
+<td >Father's_Name</td> 
+<td><input type="text" name="F_Name" placeholder="Father's Name" /> </td>
+
+<td>House/Streat No.</td> 
+<td><input type="text" name="H_No" placeholder="House/Streat No." /> </td>
+
+</tr>
+<tr><td>Date Of Birth </td>
+<td><select class="date" name="Day">
+                        <option value="1">01
+                        </option>
+                        <option value="2">02
+                        </option>
+                        <option value="3">03
+                        </option>
+                        <option value="4">04
+                        </option>
+                        <option value="5">05
+                        </option>
+                        <option value="6">06
+                        </option>
+                        <option value="7">07
+                        </option>
+                        <option value="8">08
+                        </option>
+                        <option value="9">09
+                        </option>
+                        <option value="10">10
+                        </option>
+                        <option value="11">11
+                        </option>
+                        <option value="12">12
+                        </option>
+                        <option value="13">13
+                        </option>
+                        <option value="14">14
+                        </option>
+                        <option value="15">15
+                        </option>
+                        <option value="16">16
+                        </option>
+                        <option value="17">17
+                        </option>
+                        <option value="18">18
+                        </option>
+                        <option value="19">19
+                        </option>
+                        <option value="20">20
+                        </option>
+                        <option value="21">21
+                        </option>
+                        <option value="22">22
+                        </option>
+                        <option value="23">23
+                        </option>
+                        <option value="24">24
+                        </option>
+                        <option value="25">25
+                        </option>
+                        <option value="26">26
+                        </option>
+                        <option value="27">27
+                        </option>
+                        <option value="28">28
+                        </option>
+                        <option value="29">29
+                        </option>
+                        <option value="30">30
+                        </option>
+                        <option value="31">31
+                        </option>
+                    </select>
+                    <select name="Month">
+                        <option value="Jan">January
+                        </option>
+                        <option value="Feb">February
+                        </option>
+                        <option value="Mar">March
+                        </option>
+                        <option value="Apr">April
+                        </option>
+                        <option value="May">May
+                        </option>
+                        <option value="June">June
+                        </option>
+                        <option value="July">July
+                        </option>
+                        <option value="Aug">August
+                        </option>
+                        <option value="Sept">September
+                        </option>
+                        <option value="Oct">October
+                        </option>
+                        <option value="Nov">November
+                        </option>
+                        <option value="Dec">December
+                        </option>
+                    </select>	
+					<input type="text" placeholder="Year" name="Birth" maxlength="4">
+					
+					</td>
+					
+				<td>Place</td>	
+				<td><input type="text" placeholder="Place Name" name="Place" ></td>	
+					</tr>
+<tr><td>Gender</td>
+<td>  
+<select name="Gender">
+                        <option value="Male">Male
+                        </option>
+                        <option value="Female">Female
+                        </option>
+                     
+                    </select>
+</td>
+
+	<td>District</td>	
+				<td><input type="text" placeholder="District" name="District" ></td>
+				
+</tr>
+<tr><td> Contact(primary)</td><td> <input  type="text" name="PN" placeholder="Contact(primary)"/></td>
+
+	<td>State</td>	
+				<td><input type="text" placeholder="State" name="State" ></td>
+				
+				
+</tr>
+<tr>
+
+<td>Secondary Number</td>	
+				<td><input type="text" maxlength="10" name="SN" placeholder="Secondary Contact Number" ></td>
+
+<td>Pincode</td>	
+				<td><input type="text" placeholder="Pincode" maxlength="6" name="Pincode" ></td>
+</tr>
+ </table>
+            
+			
+			
+			
+
+			
+			
+<input class="submit" type="submit" value="Confirm &raquo;" />
+</form>
+<div>
+		<script>
+window.addEventListener("load", function(){
+	var load_screen = document.getElementById("load_screen");
+	document.body.removeChild(load_screen);
+});
+</script>
+</body>
+</html>

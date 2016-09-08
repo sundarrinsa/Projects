@@ -1,0 +1,190 @@
+
+
+#demo{
+font-weight:bold;
+font-size:20px;
+font-family:Calibri;
+}
+
+
+#demo1{
+
+position:absolute;
+top:30px;
+
+text-align:left;
+font-size:13px;
+}
+#demo2{
+
+position:absolute;
+top:85px;
+text-align:left;
+font-size:15px;
+
+color:blue;
+}
+#demo3{
+
+position:absolute;
+top:85px;
+left:25px
+font-color:blue;
+font-size:15px;
+}
+
+
+#demo4{
+
+position:absolute;
+top:135px;
+left:25px
+font-color:blue;
+font-size:13px;
+}
+#demo5{
+
+position:absolute;
+top:110px;
+left:25px
+color:blue;
+font-family:Calibri;
+font-weight:bold;
+font-size:17px;
+}
+#demo6{
+
+position:absolute;
+top:111px;
+margin-left:120px;
+color:blue;
+
+font-size:15px;
+}
+#demo7{
+border:2px C3C3C3 solid;
+position:absolute;
+top:135px;
+margin-left:2px;
+background-color:#C3C3C3;
+color:black;
+width:730px;
+font-family:Calibri;
+font-size:18px;
+}
+#demo8{
+border:2px C3C3C3 solid;
+position:absolute;
+<!--top:370px;-->
+margin-left:2px;
+background-color:#C3C3C3;
+color:black;
+width:730px;
+font-family:Calibri;
+font-size:18px;
+}
+#demo9{
+
+position:absolute;
+
+margin-left:2px;
+top:480px;
+color:black;
+
+font-family:Calibri;
+font-size:18px;
+}
+#demo10{
+
+position:absolute;
+margin-bottom:250px;
+margin-left:2px;
+
+color:black;
+
+font-family:Calibri;
+font-size:18px;
+}
+#demo11
+{
+border:2px C3C3C3 solid;
+position:absolute;
+<!--top:470px;-->
+<!--margin-top:420px;-->
+margin-left:2px;
+background-color:#C3C3C3;
+color:black;
+width:730px;
+font-family:Calibri;
+font-size:18px;
+}
+
+#demo12
+{
+border:2px C3C3C3 solid;
+position:absolute;
+
+<!--margin-top:420px;-->
+margin-left:2px;
+background-color:#C3C3C3;
+color:black;
+width:730px;
+font-family:Calibri;
+font-size:18px;
+}
+
+
+#cut>table, th, td,tr{text-align:center;
+   border: 1px solid black;
+} 
+#cut>table {
+    border-collapse: collapse;
+}
+
+#colo>table,tr,td{border:0px solid black;
+text-align:left;}
+
+#new{
+position: absolute;
+
+ left:10px; 
+}
+
+
+
+#tab{position: absolute;
+ <!--top: 485px; 
+ -->
+ text-align:left;
+ }
+ 
+ 
+ #tab1{position: absolute;
+ 
+
+ }
+ 
+ 
+ ul {
+    display: block;
+    font-family:Calibri;
+font-size:18px;
+font-weight:bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 30px;
+}
+
+#pro{
+border:2px C3C3C3 solid;
+position:absolute;
+<!--top:370px;-->
+margin-left:2px;
+background-color:#C3C3C3;
+color:black;
+width:730px;
+font-family:Calibri;
+font-size:18px;
+}
