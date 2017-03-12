@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+   
+        android:id="@+id/getjson"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:onClick="getJSON"
+        android:text="Get JSON" />
+
+    <Button
+        android:id="@+id/parsejson"
+     android:layout_width="fill_parent"
+     android:onClick="parseJSON"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getjson"
+        android:layout_centerHorizontal="true"
+        android:text="Parse JSON" />
+
+    <TextView
+        android:id="@+id/json"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parsejson"
+        android:layout_centerHorizontal="true"
+        android:text="json file" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="64dp"
+        android:text="Please Wait----------------------" />
+
+</RelativeLayout>
