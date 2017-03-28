@@ -124,7 +124,7 @@ $msg = $_POST['start'];
 
 
 
- $str = file_get_contents('http://api.railwayapi.com/route/train/'.$msg.'/apikey/obver4944/'); 
+ $str = file_get_contents('http://api.railwayapi.com/route/train/'.$msg.'/apikey/dlr967m9/'); 
  $json = json_decode($str, true);
  
  $LAT=array();
